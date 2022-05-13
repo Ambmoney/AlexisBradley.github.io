@@ -3,7 +3,7 @@
   padding: 0;
 }
 
-section {
+section .hero{
   position: absolute;
   text-align: left;
   margin-top: 30%;
@@ -13,6 +13,7 @@ section {
 
 }
 
+
 html, body {
   background: #E2ECFD;
   margin: 0;
@@ -20,9 +21,19 @@ html, body {
 }
 img{
   width: cover;
+  max-width: fit-content;
   height: 1000px;
-  object-fit: contain;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-color:#220E3E;
 }
+.about-me{
+  text-align: center;
+  grid-column: row;
+  position: absolute;
+  justify-self: center;
+
+  }
 
 h1 {
   font-size: 3em;
