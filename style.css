@@ -28,11 +28,12 @@ img{
   background-color:#220E3E;
 }
 .about-me{
+  box-sizing: border-box;
   text-align: center;
   grid-column: row;
   position: absolute;
   justify-self: center;
-
+  line-height: 1.6;
   }
 
 h1 {
