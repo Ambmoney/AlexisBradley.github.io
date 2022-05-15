@@ -34,6 +34,36 @@
 
 /*General Styles*/
 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--clr-dark);
+  color: var(--clr-light);
+  margin: .5rem;
+
+}
+.navbar__bar ul{
+  margin: 0;
+  padding: 0;
+  display: flex;
+
+}
+
+.nav__bar li {
+  list-style: none;
+}
+
+.nav__bar li a {
+  text-decoration: none;
+  color: var(--clr-light);
+  padding: 1rem;
+  display: block;
+}
+.nav__link li:hover{
+  background-color: var(--clr-accent)
+}
+
 body {
   background: var(--clr-light);
   color: var(--clr-dark);
@@ -187,12 +217,16 @@ header {
 
 /*My Services Section*/
 
+
 .my-services{
   background-color: var(--clr-dark);
   background-size: cover;
   color: var(--clr-light);
-  text-align: center;
+  text-align: left;
+  
 }
+
+
 .section__title--services{
   color: var(--clr-light);
   position: relative;
@@ -292,13 +326,14 @@ header {
   opacity: .5;
 }
 
-
-.pricing{
+.pricing ul  li{
+  display: flex;
+  
+  list-style: none;
+  
+  justify-content: space-between;
   background: var(--clr-dark);
   color: var(--clr-light);
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-top: 200px;
-  padding-bottom: 200px;
+
   line-height: 1.6rem;
 }
