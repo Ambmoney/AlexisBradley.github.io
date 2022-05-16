@@ -37,7 +37,7 @@
   justify-content: space-between;
   align-items: center;
   position: absolute;
-  background-color: var(--clr-dark);
+  background-color: rgba(255,255,255,.2);
   color: var(--clr-light);
   margin-top: 0;
 }
@@ -85,8 +85,6 @@ strong { font-weight: var(--fw-bold)}
 
 
 /*Typography*/
-
-
 h1,
 h2,
 h3{
@@ -230,7 +228,7 @@ header {
   margin-bottom: 4em;
 }
 .service {
-  max-width: 500px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
@@ -247,7 +245,7 @@ header {
 }
 
 .about-me{
-  max-width: 1000px;
+  max-width: 1000%;
   margin: 0 auto;
 }
 .about-me__img{
