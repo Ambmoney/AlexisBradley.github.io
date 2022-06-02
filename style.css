@@ -2,6 +2,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  margin:0;
   
 }
 
@@ -43,6 +44,7 @@ html{
 .logo {
   position: absolute;
   
+  
 }
 .nav {
   background-color: var(--clr-dark);
@@ -81,17 +83,15 @@ html{
 
 
 body {
-  margin:0;
-  padding: 0;
   background: var(--clr-light);
-  color: var(--clr-dark);
-  margin:0;
-  display: flex;
-  font-family: var(--family-primary);
+  color: var(--clr-light);
+  margin: 0;
+  font-family: var(--ff-primary);
   font-size: var(--fs-body);
   line-height: 1.6;
-  min-width: 100vw;
-  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
 
 }
 
@@ -128,7 +128,7 @@ h2,
 h3{
 line-height:1;
 margin: 0;
-padding-bottom: 2rem;
+padding-bottom: rem;
 }
 h1{ font-size: var(--fs-h1)}
 h2{ font-size: var(--fs-h2)}
@@ -162,6 +162,10 @@ h3{ font-size: var(--fs-h3)}
   margin-top: 3rem;
 }
 
+
+.my-services {
+  text-align: center;
+}
 /*header*/
 
 header {
