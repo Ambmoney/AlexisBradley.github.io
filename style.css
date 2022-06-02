@@ -215,7 +215,7 @@ header {
     position: relative;
     z-index: 2;
     left: -1.5em;
-    width: calc(100%+1.5em);
+    width: calc(100% +1.5em);
     
   }
 
@@ -238,19 +238,12 @@ header {
 
 .my-services{
   background-color: var(--clr-dark);
-
-  color: var(--clr-light);
   text-align: center;
   
+ 
 }
 
-.service{
-  text-align: left;
-}
-.section__title--services{
-  color: var(--clr-light);
-  position: relative;
-}
+
 .section__title--services::after{
   content:'';
   display: block;
@@ -274,6 +267,7 @@ header {
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
+    text-align: left;
   }
   .service + .service{
     margin-left: 2em;
@@ -281,8 +275,9 @@ header {
 }
 
 .about-me {
-  max-width: 100%;
-  margin: 0 auto;
+  margin: 0;
+  color:#272626;
+  text-align: left;
 }
 
 
@@ -290,7 +285,7 @@ header {
   box-shadow: var(--bs);
 }
 .about-me__img {
-  grid-template-areas: "a b b";
+  grid-template-areas: "a a b";
  }
 
 
@@ -310,11 +305,9 @@ header {
   grid-area: title;
 }
 
-
-
 .my-work{
   background-color: var(--clr-dark);
-  color: var(--clr-light);
+  color: var(--clr-dark);
   text-align: center;
 }
 .portfolio{
