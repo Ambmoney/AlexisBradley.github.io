@@ -128,7 +128,7 @@ h2,
 h3{
 line-height:1;
 margin: 0;
-padding-bottom: rem;
+padding-bottom: 1rem;
 }
 h1{ font-size: var(--fs-h1)}
 h2{ font-size: var(--fs-h2)}
@@ -150,22 +150,7 @@ h3{ font-size: var(--fs-h3)}
   font-size: var(--fs-h3);
 }
 
-.section__subtitle-intro,
-.section__subtitle-about{
-  background:var(--clr-accent);
-  padding: .25em 1em;
-  font-family: var(--ff-secondary);
-  margin-bottom: 1em;
-}
 
-.site-construction {
-  margin-top: 3rem;
-}
-
-
-.my-services {
-  text-align: center;
-}
 /*header*/
 
 header {
@@ -191,6 +176,7 @@ header {
   transition: 100ms;
   transform: scale(1);
 }
+
 
 .btn:hover, .btn:focus {
   transform: scale(1.1);
@@ -233,6 +219,9 @@ header {
     
   }
 
+  .btn-construction {
+    margin-left: 2rem;
+  }
   
   .section__subtitle-intro{
     align-self: start;
@@ -291,14 +280,21 @@ header {
   }
 }
 
-.about-me{
-  max-width: 1000%;
+.about-me {
+  max-width: 100%;
   margin: 0 auto;
 }
+
+
 .about-me__img{
   box-shadow: var(--bs);
 }
-@media (min-width: 600px){
+.about-me__img {
+  grid-template-areas: "a b b";
+ }
+
+
+ @media (min-width: 600px){
   .about-me{
     display: grid;
     grid-template-columns: 1fr 200px;
@@ -309,21 +305,12 @@ header {
     grid-column-gap: 2em
   }
 }
-.section__title--about,
-.section__subtitle--about {
-  grid-column:1;
-}
 
 .section__title--about {
   grid-area: title;
 }
-.section__subtitle--about {
-  grid-column: 1/-1;
-  grid-row: 2;
-}
-.about-me__img {
- grid-area: img;
-}
+
+
 
 .my-work{
   background-color: var(--clr-dark);
