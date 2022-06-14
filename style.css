@@ -1,9 +1,11 @@
+@import "https://unpkg.com/open-props";
+@import "https://unpkg.com/open-props/normalize.min.css";
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
-  margin:0;
-  
+
 }
 
 :root{
@@ -26,14 +28,7 @@
         0.125em 0.125em 0.25em rgba(0,0,0,.15);
 }
 
-@media (min-width: 800px){
-  :root{
-    --fs-h1: 4.5rem;
-    --fs-h2: 3.75rem;
-    --fs-h3: 1.5rem;
-    --fs-body: 1.125rem;  
-  }
-}
+
 
 /*General Styles*/
 
@@ -41,44 +36,26 @@ html{
   scroll-behavior: smooth;
 }
 
-.logo {
-  position: absolute;
-  
-  
-}
+
+
 .nav {
-  background-color: var(--clr-dark);
-  color: var(--clr-light);
-  text-align: center;
-  padding:0;
-}
-
- .nav__link  {
-  color: inherit;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.nav__link:hover {
-  opacity: .7;
-}
-
-.nav__link:hover{
-  text-decoration: underline;
-}
-
-.nav__bar{
-  list-style: none;
+  position: absolute;
+  flex-grow: 1;
   display: flex;
-  justify-content: space-evenly;
-  align-items: flex-end;
-  margin: 0;
-  padding: 0;
+  gap: 1em;
+  justify-content: space-around;
 }
 
-.nav .nav__item{
-  margin: 0.5;
-  padding: .5em;
+.nav__link {
+  color: var(--clr-dark);
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+.nav__link:hover,
+.nav__link:focus {
+  color: var(--clr-accent);
+ 
 }
 
 
@@ -93,6 +70,11 @@ body {
   background-repeat: no-repeat;
   
 
+}
+
+.about-me__body {
+ grid-template-columns: auto;
+ 
 }
 
 section {
@@ -136,6 +118,7 @@ h3{ font-size: var(--fs-h3)}
 
 .section__title {
   margin-bottom: .25em;
+  
 }
 
 .section__title-intro {
@@ -159,7 +142,7 @@ header {
   padding: 1em;
 }
 .logo {
-  max-width: 150px;
+  max-width: 20%;
  }
 /*buttons*/
 
@@ -280,6 +263,9 @@ header {
   text-align: left;
 }
 
+.section__title .section__title--about{
+  color: var(--clr-dark);
+}
 
 .about-me__img{
   box-shadow: var(--bs);
