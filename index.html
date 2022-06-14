@@ -10,30 +10,26 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
 </head>
 
-<body>
-    <div class="container"> 
+<div class="main-grid">
+  <header>
+    <a href="index.html" class="nav__link"><img class="logo" src="img/LexUx.png"></a>
     <nav class="nav">
-      
-      <div class="navbar">
-        <div class="logo">
-          <img src="img/LexUx.png">
-        </div>
-        <ul class="nav__bar">
-          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-          <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
-          <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-          <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
-          <li class="nav__item"><a href="#pricing" class="nav__link">Pricing</a></li>
-        </ul>
-      </div>
-      
+          
+          <a href="index.html" class="nav__link">Home</a>
+          <a href="#services" class="nav__link">Services</a>
+          <a href="#whois" class="nav__link">About</a>
+          <a href="#work" class="nav__link">My Work</a>
+	
+          
+          
+       
     </nav>
-    
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+  </header>
 
 
   <!--Introduction-->
   <header class="hero">
-  
   <section class="into" id="home">
   <h1 class="section__title section__title--intro">Hi, I'm <strong>Alexis Bradley Aka. Lex</strong>
   </h1>
@@ -51,8 +47,8 @@
   </header>
   
   <!--My Services-->
- <section class="my-services" id="services">
-  <h2 class="section__title section__title--services">What I do</h2>
+ <section class="my-services">
+  <h2 id="services" class="title">What I do</h2>
   <div class="services">
       <div class="service">
        
@@ -80,13 +76,13 @@
   <a href="#work" class="btn">My Work</a>
 </section>
   <!--About Me-->
-<section class="about-me" id="about">
-  <h2 class="section__title section__title--about"> Who is Lex</h2>
+<section class="about-me" id="whois">
+  <h2 class="subtitle section__title section__title--about"> Who is Lex</h2>
   <img src="img/IMG_1594.jpg" alt="Alexis smiling" class="about-me__img">
   <img src="img/Group 638.jpg" alt="Landscape" class="about-me__img">
  
   <div class="about-me__body">
-        <h1>Create More</h1>
+        <h2 class="subtitle">Create More</h2>
         <p> I love to create new things in the world and to help the creators of this world. </p>
         <p>My love of creation has come in many forms. 
         </p>
@@ -96,23 +92,23 @@
         <p>Documentaries about stand-out business leaders, artists, and creators. We're drawn to those stories because they show us the way.
         </p>
         <p>Ways we never would have imagined.</p>
-        <h1>Create Often</h1>
+        <h2 class="subtitle">Create Often</h2>
         <p>Your focus is your superpower. Take charge by delegating the positions that you prefer not to do. </p>
         <p>I firmly believe that the more you lean into your passion, the better the success.</p>
         <p>Your goal is to climb this mountain top, and I'm your creative sherpa. </p>
-        <h1>Create 
-    for self</h1>
+        <h2 class="subtitle">Create 
+    for self</h2>
         <p>My passion isn't just a 9-5 thing, a coding thing, or a design thing. </p>
         <p>My passion for creation is unbound.</p>
         <p>I'm inquisitive, and if you have something that sounds difficult to describe or you need to explain your passion to those in other fields, you've reached the right place. </p>
         <p>I've made it a point to learn about and study across platforms so I can make the needed connections to     present in a meaningful way.</p>
-       <h1>Create for the world</h1>
+       <h2 class="subtitle">Create for the world</h2>
         <p>Whether you have created a business, brought an idea to the world, or have a gift to share, I want to help you reach those goals. Help you connect with your tribe and let people see what you have to share. Let us go to the top of the mountain together.</p>
   </div>
 </section>
 <!--My Work-->
   <section class="my-work" id="work">
-  <h2 class="section__title section__title--work">My work</h2>
+  <h1 class="title section__title section__title--work">My work</h1>
   <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
 
   <div class="portfolio">
@@ -147,16 +143,18 @@
       
 </body>
 <!--Footer-->
-<footer class="footer">
-  <a href="mailto:info@Alexisbradley.com" class ="footer__link">Email Lex</a>
-  <ul class="social-list">
-    <li class="social-list__item"><a class="social-list__link" href="https://twitter.com/MsLexUx" target="_blank"><i class="fab fa-twitter"></i></a></li>
-    <li class="social-list__item"><a class="social-list__link" href="https://github.com/Ambmoney"><i class="fab fa-github"></i></a></li>
-    <li class="social-list__item"><a class="social-list__link" href="https://www.instagram.com/milexi6/"><i class="">I</i></a></li>
-    <li class="social-list__item"><a class="social-list__link" href="https://www.facebook.com/MsLexUx">Fb</a></li>
-  </ul>
-  © 2022
-
+<footer>
+  <a 
+  href="http://alexisbradley.com
+  "><p>©AlexisBradley.com</p></a>
+  <div class="social-links">
+    
+    <a href="https://twitter.com/MsLexUx" aria-label="" class="social-link"><img src="" alt="" class="social-img"><span class="iconify" data-icon="jam:twitter" style="color: #F65D5F;"></span></a>
+    
+    <a href="https://www.facebook.com/MsLexUx" aria-label="" class="social-link"><span class="iconify" data-icon="brandico:facebook-rect" style="color: #F65D5F;"></span></a>
+    
+    <a href="https://www.instagram.com/milexi6/?hl=en" class="social-link" aria-label="instagram"><span class="iconify" data-icon="ant-design:instagram-filled" style="color: #F65D5F;"></span></a>
+  </div>
 </footer>
 </html>
 
