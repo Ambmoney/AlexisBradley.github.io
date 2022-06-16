@@ -5,6 +5,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  margin: 0;
 
 }
 
@@ -39,12 +40,11 @@ html{
 
 
 .nav {
-  
   position: absolute;
   flex-grow: 1;
   display: flex;
   gap: 1em;
-  align-items:center;
+  align-items: center;
   justify-content: space-around;
 }
 
@@ -63,9 +63,10 @@ html{
 .title {
   color: var(--clr-accent);
   text-transform: uppercase;
+  text-align: center;
   margin: 0;
   line-height: 1;
-  font-size: clamp(3rem, 10vw, 12rem);
+  font-size: clamp(3rem, 5vw, 6rem);
 
 }
 
@@ -76,12 +77,13 @@ html{
   text-transform: uppercase;
   margin: 0;
   line-height: 1;
-  font-size: clamp(3rem, 10vw, 12rem);
+  font-size: clamp(3rem, 10vw, 7rem);
 
 }
 
 body {
   background: var(--clr-dark);
+  text-align: left;
   color: var(--clr-light);
   margin: 0;
   font-family: var(--ff-primary);
@@ -112,7 +114,7 @@ img{
   background-image: url(../img/programerheader.jpg);
   background-repeat: cover;
   background-size: cover;
-  padding-top: 1vh;
+  padding-top: 10vh;
   padding-bottom: 15rem;
   line-height: 1.6rem;
 
@@ -164,7 +166,7 @@ header {
   padding: 1em;
 }
 .logo {
-  max-width: 20%;
+  max-width: 50%;
  }
 /*buttons*/
 
