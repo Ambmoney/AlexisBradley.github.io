@@ -105,7 +105,8 @@ section {
 }
 img{
   display: block;
-  max-width: 100%;
+  max-width: 250;
+  min-width: 200px;
 
 }
 .hero{
