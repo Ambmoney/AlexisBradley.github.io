@@ -6,6 +6,7 @@
 *::after {
   box-sizing: border-box;
   margin: 0;
+  align-items: center;
 
 }
 :root{
@@ -41,6 +42,7 @@ html{
 }
 .watermark {
   opacity: 0.2;
+  white-space: nowrap;
   color: white;
   position: fixed;
   top: auto;
@@ -51,6 +53,9 @@ p {
   padding-bottom: 2rem;
 }
 
+.viewBox{
+  text-align: center;
+}
 /*button*/
 .btn {
   background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
