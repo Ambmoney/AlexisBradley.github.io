@@ -57,12 +57,13 @@ p {
   text-align: center;
 }
 /*button*/
-.section__subtitle{
+.links{
   display: flex;
   flex-wrap: no-wrap;
 }
 .btn {
   background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
+  overflow: hidden;
   position: relative;
   text-decoration: none;
   border: none;
