@@ -57,20 +57,25 @@ p {
   text-align: center;
 }
 /*button*/
+.section__subtitle{
+  display: flex;
+  flex-wrap: no-wrap;
+}
 .btn {
   background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
+  position: relative;
   text-decoration: none;
   border: none;
   flex: 1 1 auto;
   background-color:  var(--clr-accent);
   color: var(--clr-light);
-  width: 100%;
-  padding: 20px;
+  width: clamp(1rem, 5vw, 6rem);
+  padding: 1rem;
   text-transform: uppercase;
   cursor: pointer;
   font-weight: bold;
-  border-radius: 4px;
-  margin: 10px;
+  border-radius: 1em;
+  margin: .5rem;
   background-size: 200% auto;
   transition: 100ms;
   transform: scale(1);
@@ -116,7 +121,9 @@ footer {
 .footer__link:hover {
   text-decoration: underline;
 }
+.links{
 
+}
 .social-links{
   list-style: none;
   display: flex;
