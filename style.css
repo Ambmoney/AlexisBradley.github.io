@@ -65,7 +65,7 @@ p {
 .btn {
   background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
   overflow: hidden;
-  position: relative;
+  position: center;
   text-decoration: none;
   border: none;
   flex: 1 1 auto;
